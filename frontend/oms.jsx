@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './components/root';
+// import Root from './components/root';
 import configureStore from './store/store';
 
 
@@ -22,5 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.store = store;
   window.dispatch = store.dispatch;
   const root = document.getElementById('root');
-  ReactDOM.render(<Root store={ store }/>, root);
+  ReactDOM.render(<h1>John</h1>, root);
 });
