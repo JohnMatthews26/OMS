@@ -14,7 +14,6 @@ const sessionLinks = () => (
 
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group" >
-
 	</hgroup>
 );
 
