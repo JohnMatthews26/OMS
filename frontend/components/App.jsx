@@ -3,7 +3,10 @@ import GreetingContainer from './greeting/greeting_container';
 
 const App = () => (
   <div className='mainDiv'>
-    <GreetingContainer />
+    <header>
+      <h1>FindMyDog</h1>
+      <GreetingContainer />
+    </header>
   </div>
 );
 
