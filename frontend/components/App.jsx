@@ -15,7 +15,6 @@ import {ProtectedRoute} from '../util/route_util';
 const App = () => (
   <div className='mainDiv'>
     <header>
-      <h1>FindMyDog</h1>
       <GreetingContainer />
     </header>
     <Switch>
