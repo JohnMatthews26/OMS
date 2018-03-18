@@ -9,3 +9,40 @@ a.login_signup_links {
     border: 2px solid black;
     box-shadow: 3px 3px 3px grey;
 }
+
+
+
+header {
+    height: 60px;
+}
+
+nav.login-page-nav {
+    height: inherit;
+}
+
+section.login-signup {
+    height: inherit;
+    display: flex;
+}
+
+input.login-input {
+    background-color: whitesmoke;
+    height: 20px;
+    width: 160px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px grey;
+    margin: 5px;
+}
+
+input.authsubmitbutton {
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px 63px;
+    background-color: #3897f0;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px grey;
+    width: 30px;
+}
