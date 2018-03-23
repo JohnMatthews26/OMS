@@ -63,4 +63,10 @@ button.header-button {
 .login-form {
     display: flex;
     flex-direction: column;
+    width: 200px;
+}
+
+form.login-form-box {
+    display: flex;
+    justify-content: center;
 }
