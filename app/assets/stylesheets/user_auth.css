@@ -59,3 +59,7 @@ button.header-button {
     width: 50px;
     padding: 9px;
 }
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
