@@ -32,6 +32,7 @@ input.login-input {
     border-radius: 3px;
     box-shadow: 3px 3px 3px grey;
     margin: 5px;
+    text-align: center;
 }
 
 input.authsubmitbutton {
