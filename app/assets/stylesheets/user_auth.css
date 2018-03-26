@@ -64,6 +64,7 @@ button.header-button {
     display: flex;
     flex-direction: column;
     width: 200px;
+    align-items: center;
 }
 
 form.login-form-box {
