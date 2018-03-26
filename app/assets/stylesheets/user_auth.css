@@ -70,3 +70,9 @@ form.login-form-box {
     display: flex;
     justify-content: center;
 }
+
+.login-splash-div {
+    height: 100%;
+    width: 100%;
+    background-color: dodgerblue;
+}
