@@ -3,6 +3,12 @@ import {withRouter} from 'react-router';
 
 
 class Map extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
 
   render(){
 
