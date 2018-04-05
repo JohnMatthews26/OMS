@@ -1,6 +1,7 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
+import MapContainer from './map/map_container';
 import { Provider, Redirect } from 'react-redux';
 import {
   Route,
@@ -20,6 +21,10 @@ const App = () => (
     <Switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
+    </Switch>
+
+    <Switch>
+      <ProtectedRoute path="/" component={MapContainer} />
     </Switch>
   </div>
 );
