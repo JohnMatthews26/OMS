@@ -16,9 +16,8 @@ class Map extends Component {
           zoom: 8
         });
   }
+
   render(){
-
-
 
     return (
 
