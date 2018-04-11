@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router';
-let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+import ReactDOM from 'react-dom';
+
+const getCoordsObj = latLng => ({
+  lat: latLng.lat(),
+  lng: latLng.lng()
+});
+
+const mapOptions = {
+  center: {
+    lat: 37.773972,
+    lng: -122.431297
+  },
+  zoom: 13
+};
 
 class Map extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
+  componentDidMount() {
+    const map = this.refs.map;
+    this.map = new google.maps.Map(map, mapOptions);
   }
+
 
 
 
@@ -16,17 +28,8 @@ class Map extends Component {
 
     return (
 
-      <div id='map-div'>
-        <div id='map'>
-
-        </div>
-        <script>
-          mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obnJvc2NvZTEyIiwiYSI6ImNqZnZqdHh6djBoY2EycW4xeWVxZmFwNHMifQ.Wc-DNL-Uf_07zf5yp1WByw';
-          let map = new mapboxgl.map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v10'
-          });
-        </script>
+      <div className="map" ref="map">
+          Map
       </div>
     );
   }

@@ -3,10 +3,7 @@
   <head>
     <title>OMS</title>
     <%= csrf_meta_tags %>
-    <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyBjambprIzjQ9AmfFtKdY1T-pPMQzwaDQ4" %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
