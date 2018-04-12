@@ -1,5 +1,6 @@
 /* PHASE 0: Reset */
 
+
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
@@ -74,4 +75,6 @@ html {
 .mainDiv {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
