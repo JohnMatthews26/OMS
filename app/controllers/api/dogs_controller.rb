@@ -13,7 +13,7 @@ class Api::DogsController < ApplicationController
   end
 
   def index
-    
+    @dogs = Dog.where(user_id: current_user.id)
   end
 
   def destroy
@@ -21,7 +21,7 @@ class Api::DogsController < ApplicationController
   end
 
   def show
-
+    @dog = Dog.find_by(id: params[:id])
   end
 
   private
