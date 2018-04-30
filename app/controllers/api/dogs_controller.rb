@@ -17,7 +17,11 @@ class Api::DogsController < ApplicationController
   end
 
   def destroy
-
+    @dog = Dog.find_by(id: params[:id])
+    dog_dup = @dog
+    @dog.destroy
+    @dog = dog_dup
+    render "api/dogs/show"
   end
 
   def show
